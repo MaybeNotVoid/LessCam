@@ -1,0 +1,10 @@
+# LessCam - Dependencies
+PyQt6>=6.6.0
+PyQt6-Fluent-Widgets>=1.11.0
+opencv-python>=4.8.0
+pyvirtualcam>=0.11.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+av>=11.0.0
+yt-dlp>=2024.0.0
+Pillow>=10.0.0

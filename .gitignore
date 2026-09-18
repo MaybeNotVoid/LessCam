@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Caches and temporary video storage
+cache/*
+!cache/.gitkeep
+tmp/
+temp/
+
+# Environment and IDEs
+.env
+.venv/
+env/
+venv/
+.vscode/
+.idea/
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Log files
+*.log
