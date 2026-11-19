@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 chcp 65001 >nul
-title LessCam Studio 2.0 (Rust Edition) - Installer Completo & Dipendenze
+title LessCam Studio 2.0 (Rust Edition) - Installer Completo ^& Dipendenze
 color 0B
 
 echo ===========================================================================
@@ -26,7 +26,7 @@ if %errorlevel% neq 0 (
         set "PATH=%USERPROFILE%\.cargo\bin;%PATH%"
     ) else (
         echo [!] Toolchain Rust non trovata. Scaricamento e installazione automatica di Rustup...
-        powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://win.rustup.rs/x86_64' -OutFile '$env:TEMP\rustup-init.exe'; Start-Process -FilePath '$env:TEMP\rustup-init.exe' -ArgumentList '-y' -Wait"
+        powershell -NoProfile -ExecutionPolicy Bypass -Command "Invoke-WebRequest -Uri 'https://win.rustup.rs/x86_64' -OutFile '%TEMP%\rustup-init.exe'; Start-Process -FilePath '%TEMP%\rustup-init.exe' -ArgumentList '-y' -Wait"
         set "PATH=%USERPROFILE%\.cargo\bin;%PATH%"
     )
 )
