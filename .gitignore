@@ -26,3 +26,11 @@ $RECYCLE.BIN/
 
 # Log files
 *.log
+
+# Rust build artifacts and local downloaded external binaries
+lesscam-rust/target/
+lesscam-rust/bin/
+lesscam-rust/cache/
+lesscam-rust/installer/output/
+lesscam-rust/lesscam.exe
+
